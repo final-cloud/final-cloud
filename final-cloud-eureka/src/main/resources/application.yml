@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}:${server.port}
+    instance-id: ${spring.application.name}@${spring.cloud.client.ip-address}:${server.port}
+    app-group-name: final-cloud
+    appname: eureka
+  server:
+    enable-self-preservation: false
+  client:
+    service-url:
+      defauleZone: http://rd-eureka.dmall.com/eureka/
+    register-with-eureka: true

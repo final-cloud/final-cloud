@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh" class="theme-dark">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Dashboard :: DevOps </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport'/>
+  <!-- Extra details for Live View on GitHub Pages -->
+  <!-- Canonical SEO -->
+  <!--  Social tags      -->
+  <meta
+      content=""
+      name="keywords">
+  <meta
+      content=""
+      name="description">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicons/favicon.ico">
+
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+        rel="stylesheet" type="text/css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="/assets/css/material-dashboard.min.css" rel="stylesheet"/>
+  <!--  <link href="/assets/css/material-kit.min.css" rel="stylesheet"/>-->
+  <!--  <link href="/assets/css/material-dashboard-dark.min.css" rel="stylesheet"/>-->
+  <!--  <link href="/assets/css/highlight/base16.solarized.css" rel="stylesheet"/>-->
+  <!--  <link href="/assets/css/highlight/base16.solarized.dark.css" rel="stylesheet"/>-->
+  <!--  <link href="/assets/css/highlight/github.css" rel="stylesheet"/>-->
+  <link href="/assets/css/markdown.css" rel="stylesheet"/>
+  <link href="/assets/css/theme.css" rel="stylesheet"/>
+  <!--  <link href="/assets/css/theme-dark.css" rel="stylesheet"/>-->
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <!--<link href="/assets/demo/demo.css" rel="stylesheet" />-->
+
+  <!--  代码高亮-->
+  <!--  <link rel="stylesheet" href="/assets/css/highlight/solarized-dark.css">-->
+  <link rel="stylesheet" href="/assets/css/highlight/atom-one-dark.css">
+  <script src="//unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+
+
+  <!--   Core JS Files   -->
+  <script src="/assets/js/core/jquery.min.js"></script>
+  <script src="/assets/js/core/popper.min.js"></script>
+  <script src="/assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Plugin for the momentJs  -->
+  <script src="/assets/js/plugins/moment.min.js"></script>
+  <!--  Plugin for Sweet Alert -->
+  <script src="/assets/js/plugins/sweetalert2.js"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="/assets/js/plugins/jquery.validate.min.js"></script>
+  <script src="/assets/js/plugins/jquery.toc.js"></script>
+  <script src="/assets/js/plugins/mermaid.min.js"></script>
+  <script src="/assets/js/plugins/jquery.cookie.min.js"></script>
+  <!--    <script src="/assets/js/plugins/jquery.json.js"></script>-->
+  <!--    <script src="/assets/js/plugins/bignumber.min.js"></script>-->
+  <!--    <script src="/assets/js/plugins/jsonpath.js"></script>-->
+  <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+  <script src="/assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="/assets/js/plugins/bootstrap-selectpicker.js"></script>
+  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+  <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+  <script src="/assets/js/plugins/jquery.dataTables.min.js"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="/assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="/assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+  <script src="/assets/js/plugins/fullcalendar.min.js"></script>
+  <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+  <script src="/assets/js/plugins/jquery-jvectormap.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="/assets/js/plugins/nouislider.min.js"></script>
+  <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <!-- Library for adding dinamically elements -->
+  <script src="/assets/js/plugins/arrive.min.js"></script>
+  <!--    <script src="/assets/js/plugins/bootstrap-treeview.js"></script>-->
+  <!--    <script src="/assets/js/plugins/bootstrap-table.js"></script>-->
+  <!--    <script src="/assets/js/plugins/bootstrap-table-fixed-columns.js"></script>-->
+  <!-- Chartist JS -->
+  <script src="/assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="/assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="/assets/js/plugins/snows.js"></script>
+  <!--    <script src="/assets/js/plugins/jszip.min.js"></script>-->
+  <!--    <script src="/assets/js/plugins/FileSaver.min.js"></script>-->
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="/assets/js/material-dashboard.min.js" type="text/javascript"></script>
+  <!--  <script src="/assets/js/material-kit.min.js" type="text/javascript"></script>-->
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <!--    <script src="/assets/demo/demo.js"></script>-->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<style>
+
+</style>
+<body class="blog-posts" data-offset="150" data-spy="scroll" data-target="#toc" style="background-color: whitesmoke"
+      id="app">
+
+<!-- Extra details for Live View on GitHub Pages -->
+<div class="wrapper">
+  <div class="main-panel vh-100" style="height: 100%">
+    
+
+<div id="sidebar" class="sidebar" data-color="rose" data-background-color="black" data-image="/assets/img/sidebar-1.jpg">
+  <!--
+    Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+    Tip 2: you can also add an image using data-image tag
+-->
+  <div class="logo">
+    <a class="simple-text logo-mini" href="/devops">
+      <img src="/assets/img/favicons/falcon.png" height="32" width="32"/>
+    </a>
+    <a class="simple-text logo-normal" style="text-transform: none" href="/devops">
+      Devops
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    
+<ul class="nav">
+  <li :class="page.menus[0] == menu1.id ? 'active' : ''" class="nav-item " v-for="(menu1,i1) in sidebar.menus">
+    <!--一级菜单-->
+    <a :class="page.menus.length > 1 && page.menus[0] == menu1.id && page.menus[1] != 'index' ? 'collapse' : ''"
+       :href=" menu1.menus ? '#' + menu1.id : menu1.url ? menu1.url : '/' + page.collection + '/'  + menu1.id " class="nav-link"
+      :data-toggle="menu1.menus ? 'collapse' : ''"
+    >
+      <i class="material-icons" v-html="menu1.icon"></i>
+      <p> {{menu1.name}} <b class="caret" v-if="menu1.menus"></b></p>
+    </a>
+    <div :class="page.menus[0] == menu1.id ? 'show' : ''" :id="menu1.id" class="collapse"
+         v-if="menu1.menus">
+      <ul class="nav">
+        <li :class="page.menus[0] == menu1.id && page.menus[1] == menu2.id ? 'active' : ''" class="nav-item "
+            v-for="(menu2,i2) in menu1.menus">
+          <!--二级菜单-->
+          <a :href="menu2.url ? menu2.url : '/' + page.collection + '/'  + menu1.id + '/' + menu2.id" class="nav-link"
+             :class="page.menus.length > 2 && page.menus[0] == menu1.id && page.menus[1] == menu2.id && page.menus[2] != 'index' ? 'collapse' : ''">
+            <i class="material-icons" v-html="menu2.icon"></i>
+<!--            <span class="sidebar-mini" v-html="menu2.mini ? menu2.mini :  i1 + '.' + (i2 + 1)"> P </span>-->
+            <span class="sidebar-normal" v-html="menu2.name"> Pricing </span>
+          </a>
+          <div :class="page.menus[1] == menu2.id ? 'show' : ''" :id="menu1.id +'@' + menu2.id"
+               class="collapse"
+               v-if="menu2.menus">
+            <ul class="nav" style="background-color: #18181899;padding: 16px 0">
+              <li :class="page.menus[0] == menu1.id && page.menus[1] == menu2.id && page.menus[2] == menu3.id ? 'active' : ''"
+                  class="nav-item"
+                  v-for="(menu3,i3) in menu2.menus">
+                <!--三级菜单-->
+                <a :href="menu3.url ? menu3.url : '/' + page.collection + '/'  + menu1.id + '/' + menu2.id + '/' + menu3.id "
+                   class="nav-link" v-if="menu3.menus == null">
+                  <span class="sidebar-mini"
+                        v-html="menu3.mini ? menu2.mini : i1 + '.' + (i2 + 1) + '.' + (i3 + 1)"> E </span>
+                  <span class="sidebar-normal" v-html="menu3.name"> Example </span>
+                </a>
+                <a :href="'#' + menu1.id +'@' + menu2.id +'@' + menu3.id" aria-expanded="true"
+                   class="nav-link"
+                   data-toggle="collapse"
+                   v-if="menu3.menus">
+                  <span class="sidebar-mini" v-html="menu3.mini"> MLT </span>
+                  <span class="sidebar-normal"> <span v-html="menu3.name"></span><b class="caret"></b></span>
+                </a>
+                <div :class="page.menus[2] == menu3.id ? 'show' : ''"
+                     :id="menu1.id +'@' + menu2.id +'@' + menu3.id"
+                     class="collapse"
+                     v-if="menu3.menus">
+                  <ul class="nav">
+                    <li :class="page.menus[0] == menu1.id && page.menus[1] == menu2.id && page.menus[2] == menu3.id && page.paths[4] == menu4.id ? 'active' : ''"
+                        class="nav-item"
+                        v-for="menu4 in menu3.menus">
+                      <a :href="menu4.link" class="nav-link">
+                        <span class="sidebar-mini" v-html="menu4.mini"> E </span>
+                        <span class="sidebar-normal" v-html="menu4.name"> Example </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+
+  </div>
+  <div class="sidebar-background" style="background-image: url(/assets/img/sidebar-1.jpg);"></div>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg  bg-primary"
+     color-on-scroll="100"
+     id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="/devops">DevOps</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/likly/final-frameworks" target="_blank" rel="noopener"><i class="material-icons">star</i>
+            点赞关注
+            <div class="ripple-container"></div>
+          </a>
+        </li>
+        <!--Resources-->
+        <li class="nav-item dropdown">
+          <a class="nav-item nav-link dropdown-toggle mr-md-2" href="/devops/index.html" id="bd-versions"
+             data-toggle="dropdown"
+             aria-haspopup="true">
+            <i class="material-icons">apps</i>
+            <span v-text="selectedResource"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+            <a class="dropdown-item dropdown-flag-holder" v-for="resource in resources" :class=" resource.name == selectedResource ? 'active' : ''" @click="changeResource(resource)" v-html="resource.name"></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="https://github.com/likly/final-frameworks" class="github-corner" aria-label="View source on Github">
+  <svg width="70" height="70" viewBox="0 0 250 250" style="fill:#fff; color:#9c27b0; position: absolute; top: 0; border: 0; right: 0;"
+       aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+    <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+    <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+  </svg>
+</a>
+
+</nav>
+
+    <!-- End Navbar -->
+
+    <div class="main" style="margin-top: 70px">
+      <div class="container-fluid">
+        
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="/devops">
+            Devops
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+      ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      , mark with <i class="material-icons">stars</i> by
+      <a href="https://github.com/likly/final-frameworks" target="_blank">Devops</a> for a better framework.
+    </div>
+  </div>
+</footer>
+
+  </div>
+</div>
+<div id="snowbox"/>
+<script>
+
+  $(document).ready(function () {
+        mermaid.initialize({
+          theme: 'forest',
+          sequence: {
+            showSequenceNumbers: true
+          },
+          er: {
+            fontSize: 18
+          }
+        });
+        mermaid.init({}, ".language-mermaid, .language-sequence");
+
+        $sidebar = $('.sidebar');
+
+        $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+
+        window_width = $(window).width();
+
+        fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+        if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+          if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+            $('.fixed-plugin .dropdown').addClass('open');
+          }
+
+        }
+
+        $('.fixed-plugin a').click(function (event) {
+          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+        // $('.fixed-plugin .background-color .badge').click(function () {
+        //     $(this).siblings().removeClass('active');
+        //     $(this).addClass('active');
+        //
+        //     var new_color = $(this).data('background-color');
+        //
+        //     if ($sidebar.length != 0) {
+        //         $sidebar.attr('data-background-color', new_color);
+        //     }
+        // });
+
+        $('.switch-sidebar-image input').change(function () {
+          $full_page_background = $('.full-page-background');
+          $input = $(this);
+
+          if ($input.is(':checked')) {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar_img_container.fadeIn('fast');
+              $sidebar.attr('data-image', '#');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page_background.fadeIn('fast');
+              $full_page.attr('data-image', '#');
+            }
+
+            background_image = true;
+          } else {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar.removeAttr('data-image');
+              $sidebar_img_container.fadeOut('fast');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page.removeAttr('data-image', '#');
+              $full_page_background.fadeOut('fast');
+            }
+
+            background_image = false;
+          }
+        });
+
+      }
+  );
+</script>
+<!-- 飘雪花 -->
+<script type="text/javascript">
+  $(function () {
+    // $.fn.snow({
+    //   minSize: 3, /* 定义雪花最小尺寸 */
+    //   maxSize: 66,/* 定义雪花最大尺寸 */
+    //   newOn: 666  /* 定义密集程度，数字越小越密集 */
+    // });
+
+    // 每张图片居中处理
+    // $("img[loading='lazy']").parent("p").css("text-align","center");
+    $("#topics p img").wrap("<div style='text-align:center;'></div>");
+  });
+  var getRandomColor = function () {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  }
+</script>
+</body>
+
+<script>
+  $(document).ready(function () {
+    $('#toc').toc({
+      headers: 'h2,h3,h4,h5,h6',
+      classes: {
+        list: '',
+        item: 'nav-item toc-entry'
+      }
+    });
+  });
+</script>
+
+
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        //filter: $.cookie('sidebar-filter'),
+        //color: $.cookie('sidebar-color'),
+        //mini: $.cookie('sidebar_mini'),
+        page: {
+          collection: "devops",
+          paths: ["devops","index"],
+          title: "Dashboard",
+          menus: [],
+          module: "",
+        },
+        modules: [{"id":"docs","name":"Docs","logo":"/assets/images/logos/github.svg","link":"/docs/zh/overview"},{"id":"spring","logo":"/assets/images/logos/spring.svg","name":"Spring","link":"/spring/zh/overview"}],
+        theme: "light",
+        sidebar: {"logo":"/assets/img/favicons/falcon.png","name":"DevOps","menus":[{"id":"index","icon":"dashboard","name":"Dashboard"},{"id":"debug","icon":"bug_report","name":"Debug","menus":[{"id":"method","icon":"api","name":"方法调试"}]}]}
+      }
+    },
+    mounted() {
+
+      this.page.menus = this.page.paths.slice(1);
+
+      console.log(this.sidebar);
+      console.log(this.page.paths);
+      console.log(this.page.menus);
+    }
+  })
+  .mount('#sidebar');
+
+  Vue.createApp({
+    data() {
+      return {
+        resources: [],
+        selectedResource: window.localStorage.getItem("resource")
+      }
+    },
+    watch: {
+      selectedResource() {
+        console.log("resource:" + this.selectedResource);
+        window.localStorage.setItem("resource", this.selectedResource);
+        window.location.reload();
+      }
+    },
+
+    mounted() {
+      this.loadResources();
+    },
+
+    methods: {
+      loadResources() {
+        let $this = this;
+        axios.get('/resources')
+        .then(function (response) {
+          console.log(response.data);
+          $this.resources = response.data.data;
+
+          if ($this.selectedResource == null) {
+            $this.selectedResource = $this.resources[0].name;
+          }
+
+        });
+      },
+      changeResource(resource) {
+        this.selectedResource = resource.name;
+        window.localStorage.setItem("resourcePath",resource.path);
+      }
+    }
+
+  })
+  .mount('#navbar');
+</script>
+<script>
+$(document).ready(function () {
+   let domain = "";
+  $('a').each(function () {
+    let $a = $(this);
+    let href = $a.attr('href');
+
+    if (href !== undefined && href.indexOf('http') == -1) {
+      if (href.indexOf('.md') !== -1) {
+        // 以 .md 结尾的，替换为 .html
+        // 将链接中的 README 替换为 index
+        href = href.replace('README', 'index');
+        href = href.substr(0, href.length - 3).concat('.html');
+      }
+
+      if (href.indexOf('.java') !== -1) {
+        href = domain + href;
+      }
+
+      if (href.indexOf('.vm') !== -1) {
+        href = domain + href;
+      }
+
+      if (href.indexOf('\/_') !== -1) {
+                href = href.replace(/\/_/g,'/');
+            }
+
+           $a.attr('href',href);
+       }
+
+   });
+
+   $('a[href^="http"]').each(function () {
+       $(this).attr('target', '_blank');
+   });
+});
+</script>
+</html>
